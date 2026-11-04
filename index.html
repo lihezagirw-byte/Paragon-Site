@@ -200,6 +200,11 @@
       font-size: 15px;
     }
 
+    /* ---------- Prototype preview ---------- */
+    .prototype { margin-top: 20px; }
+    .section--tint .prototype__frame { background: var(--surface); }
+    .prototype__frame { display: block; width: 100%; height: 680px; margin: 12px 0 16px; border: 0; border-radius: 12px; background: var(--surface); }
+
     /* ---------- Tabs: only the chosen page is shown ---------- */
     .js .page { display: none; }
     .js .page.is-active { display: block; }
@@ -219,6 +224,7 @@
     <a class="nav__link" href="#about">About Us</a>
     <a class="nav__link" href="#problem">The Problem</a>
     <a class="nav__link" href="#solution">Our Solution</a>
+    <a class="nav__link" href="#prototype">Prototype</a>
     <a class="nav__link" href="#challenges">Challenges</a>
     <a class="nav__link" href="#team">Our Team</a>
   </nav>
@@ -303,6 +309,20 @@
             <h3>How We Share It</h3>
             <p>We reach young people through schools, social media and community meetings.</p>
           </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Prototype -->
+    <section class="section section--tint page" id="prototype">
+      <div class="container">
+        <p class="label">Prototype</p>
+        <h2>Try our platform</h2>
+        <p class="lead">A clickable preview of the platform. Tap the tabs at the bottom of the phone to explore. All names and listings in it are samples.</p>
+        <div class="card prototype">
+          <iframe class="prototype__frame" src="prototype.html" title="Clickable prototype of the Paragon talent platform" loading="lazy"></iframe>
+          <a class="button" href="prototype.html" target="_blank" rel="noopener">Open full screen</a>
         </div>
       </div>
     </section>
